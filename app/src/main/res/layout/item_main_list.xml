@@ -15,11 +15,12 @@
             android:layout_height="@dimen/main_item_height"
             app:cardCornerRadius="2dp"
             app:cardElevation="2dp"
+            android:onClick="@{viewModel::onItemClick}"
             android:layout_marginTop="4dp"
             android:layout_marginBottom="4dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:background="?attr/selectableItemBackground">
+            android:foreground="?attr/selectableItemBackground">
 
             <RelativeLayout
                 android:layout_width="match_parent"
