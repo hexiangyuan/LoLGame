@@ -1,4 +1,4 @@
-package io.github.hexiangyuan.lolgame.main.latest
+package io.github.hexiangyuan.lolgame.main.module.latest
 
 import io.github.hexiangyuan.lolgame.main.BaseView
 import io.github.hexiangyuan.lolgame.main.BaseViewModel

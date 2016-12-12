@@ -1,4 +1,4 @@
-package io.github.hexiangyuan.lolgame.main.latest
+package io.github.hexiangyuan.lolgame.main.module.latest
 
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager

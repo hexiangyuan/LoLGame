@@ -1,4 +1,4 @@
-package io.github.hexiangyuan.lolgame.main.latest
+package io.github.hexiangyuan.lolgame.main.module.latest
 
 import android.databinding.DataBindingUtil
 import android.support.v7.widget.RecyclerView

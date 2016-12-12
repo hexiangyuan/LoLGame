@@ -9,7 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import io.github.hexiangyuan.lolgame.BaseFragment
 import io.github.hexiangyuan.lolgame.R
-import io.github.hexiangyuan.lolgame.main.latest.LatestFragment
+import io.github.hexiangyuan.lolgame.main.module.latest.LatestFragment
 import kotlinx.android.synthetic.main.fragment_main.*
 
 /**

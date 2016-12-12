@@ -1,4 +1,4 @@
-package io.github.hexiangyuan.lolgame.main.latest
+package io.github.hexiangyuan.lolgame.main.module.latest
 
 import android.content.Context
 import android.view.View
