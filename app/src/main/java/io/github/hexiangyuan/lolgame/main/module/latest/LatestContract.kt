@@ -1,7 +1,7 @@
 package io.github.hexiangyuan.lolgame.main.module.latest
 
 import io.github.hexiangyuan.lolgame.main.BaseView
-import io.github.hexiangyuan.lolgame.main.BaseViewModel
+import io.github.hexiangyuan.lolgame.main.Model.MainListBean
 
 /**
  * Creator:HeXiangYuan
@@ -9,10 +9,15 @@ import io.github.hexiangyuan.lolgame.main.BaseViewModel
  */
 interface LatestContract {
     interface View : BaseView {
-
+        fun NewsLoaded(news: MainListBean)
+        fun showLoading()
+        fun hideLoading()
+        fun setPresenter(presenter: Presenter)
     }
 
-    interface ViewModel : BaseViewModel {
-
+    interface Presenter {
+        fun loadNews(page: Int)
+        fun start()
+        fun destroyed()
     }
 }

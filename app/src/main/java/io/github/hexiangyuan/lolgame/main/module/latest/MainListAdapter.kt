@@ -15,7 +15,7 @@ import java.util.*
  * Date  : 16-12-9
  */
 class MainListAdapter() : Adapter<MainListAdapter.ListViewHolder>() {
-    var contents: ArrayList<MainListBean.Content> = ArrayList()
+    var contents: List<MainListBean.Content> = ArrayList()
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ListViewHolder {
         val listBinding: ItemMainListBinding = DataBindingUtil.inflate(
