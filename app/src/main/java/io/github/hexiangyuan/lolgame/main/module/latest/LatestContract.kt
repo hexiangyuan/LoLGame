@@ -9,7 +9,7 @@ import io.github.hexiangyuan.lolgame.main.Model.MainListBean
  */
 interface LatestContract {
     interface View : BaseView {
-        fun NewsLoaded(news: MainListBean)
+        fun newsLoaded(news: MainListBean)
         fun showLoading()
         fun hideLoading()
         fun setPresenter(presenter: Presenter)

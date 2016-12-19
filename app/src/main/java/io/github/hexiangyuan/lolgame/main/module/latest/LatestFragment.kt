@@ -33,7 +33,7 @@ class LatestFragment : BaseFragment(), LatestContract.View {
         presenter.loadNews(0)
     }
 
-    override fun NewsLoaded(news: MainListBean) {
+    override fun newsLoaded(news: MainListBean) {
         adapter.contents = news.list
         adapter.notifyDataSetChanged()
     }

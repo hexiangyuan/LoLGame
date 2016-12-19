@@ -1,5 +1,6 @@
 package io.github.hexiangyuan.lolgame.main.module.latest
 
+import android.util.Log
 import io.github.hexiangyuan.lolgame.main.Model.MQtNews
 import io.github.hexiangyuan.lolgame.main.Model.MainListBean
 import io.github.hexiangyuan.lolgame.main.net.QtApi
@@ -28,6 +29,7 @@ class LatestPresenter(val view: LatestContract.View) : LatestContract.Presenter 
             }
 
             override fun onNext(t: MQtNews?) {
+                Log.e("abcd", t.toString())
                 val news = MainListBean()
                 val list = ArrayList<MainListBean.Content>()
                 news.next = t?.next
@@ -43,9 +45,12 @@ class LatestPresenter(val view: LatestContract.View) : LatestContract.Presenter 
                     content.sourceFrom = "QT"
                     list.add(content)
                 }
+                news.list = list
+                view.newsLoaded(news)
             }
 
             override fun onError(e: Throwable?) {
+                Log.e("abcd", e?.message)
                 view.hideLoading()
             }
         })
